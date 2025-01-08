@@ -250,6 +250,10 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
   
 /* --animation rotate -- */
 
+.pointer{
+    cursor: pointer;
+}
+
 .logos{
     text-shadow: var(--bg-black) 0px 0px 7px;
 }
@@ -317,10 +321,12 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     #form{
         margin-top: 1rem;
         width: 100%;
+        height: auto;
     }
 
     #map{
     width: 100%;
+    height: auto;
     }
 }
 

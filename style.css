@@ -50,8 +50,9 @@
 
 
 #map{
-    width: 50%;
-    height: 28rem;
+    width: 45%;
+    height: auto;
+    min-height: 20rem;
 }
 
 /* --form-- */
