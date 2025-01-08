@@ -276,6 +276,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 
     #hamburger{
         display: flex !important;
+        cursor: pointer;
     }
     
     #menu{
@@ -302,10 +303,24 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
         display: flex;
         align-self: start;
         transform: translateX(-2rem) translateY(1rem);
+        cursor: pointer;
     }
 
     .container{
         width: 85%;
+    }
+
+    #contacto{
+        flex-direction: column;
+    }
+
+    #form{
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    #map{
+    width: 100%;
     }
 }
 
