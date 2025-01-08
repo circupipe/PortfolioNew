@@ -320,7 +320,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 
     #form{
         margin-top: 1rem;
-        width: 100%;
+        width: fit-content;
         height: auto;
     }
 
