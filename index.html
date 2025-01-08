@@ -12,32 +12,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
-<body class="text-black bg-3 ">
+<body class="text-black bg-1 ">
 
     <header>
-
-        <nav class="bg-2 border-2 ">
+        <nav class=" border-2 ">
             <ul class="container flex-center-between">
                 <li class="flex-center-center gap-1">
                     <p class="text-1 font-size-2 bold text-size-2"> circupipe. </p>
                 </li>
                 <li id="menu" class="text-3 flex-end-between gap-1 margin-top-1">
+                    <button class="button xnone bg-black" id="cerrar"><i class=" fa-solid fa-rectangle-xmark fa-2x"></i></button>
                     <a id="nav-button" class="files border-1 padding-05" href="#inicio">Inicio</a>
                     <a id="nav-button" class="files border-1 padding-05" href="#conocimientos">Conocimientos</a>
-                    <a id="nav-button" class="files border-1 padding-05" href="#proyectos">Proyectos</a>
+                    <a id="nav-button" class="files border-1 padding-05" href="#proyect">Proyectos</a>
                     <a id="nav-button" class="files border-1 padding-05" href="#contacto">Contacto</a>
-                    
                 </li>
-                <button id="hamburger" class="none"><i class="fa-solid fa-bars"></i></button>
+                <button id="hamburger" class="button none bg-1 text-1"><i class="fa-solid fa-bars fa-2x"></i></button>
             </ul>
         </nav>
-
     </header>
 
-    <main id="" class="padding-top-3 bg-1">
+    <main id="" class="padding-top-3 ">
         <section class="container flex-center-start row gap-3 text-white "> 
-            <div class="max-width-90 border-3 shadow-a bg-2 text-blur direction-column  padding-3 radius-1">
-                <p class="text-2 font-size-2 font-size"><span class="text-1 font-size-2">¡Hola!</span>  Soy Leonardo ia</p>
+            <div id="inicio" class="max-width-90 border-3 shadow-a bg-2 text-blur direction-column  padding-3 radius-1">
+                <p class="text-2 font-size-2 font-size"><span class="text-1 font-size-2">¡Hola!</span>  Soy Leonardo Garcia</p>
                 <p class="padding-top-1 text-4 font-size-1 indent">Soy estudiante de desarrollo fullstack apasionado por la ología y el aprendizaje continuo. Desde que comencé a estudiar programación, he descubierto una ción que había postergado durante años. Después de explorar diferentes campos laborales, finalmente he ntrado en el desarrollo web un camino que me motiva y desafía a diario.</p>
                 <div class="flex-center-start gap-2 wrap padding-top-2 ">
                     <i style="color: #316FF6" class="logos fa-brands fa-facebook fa-2x"></i>
@@ -49,7 +47,7 @@
 
         </section>
         <section class=" padding-top-3 container flex-center-center margin-block-2 gap-3 text-white ">
-            <div class=" max-width-90 border-3b shadow-b bg-2 text-blur direction-column  padding-3 radius-1 ">
+            <div id="conocimientos" class=" max-width-90 border-3b shadow-b bg-2 text-blur direction-column  padding-3 radius-1 ">
                 <p class="text-2 font-size-2 font-size flex-center-end">Conocimientos</p>
                 <p class="padding-top-1 text-4 font-size-1 indent">Estoy enfocando mis estudios en desarrollo web, nzando con una sólida base en HTML y CSS. Actualmente, estoy aprendiendo JavaScript, lo cual me orcionará una comprensión profunda de la programación en la web, planeo sumergirme en React para vechar todas las ventajas de esta poderosa biblioteca y crear aplicaciones web interactivas y dinámicas.
                 <div class="flex-center-end gap-2 wrap padding-top-2 ">
@@ -70,29 +68,29 @@
         </section>
     </main>
 
-    <section  class="margin-top-2 micabezadechoto container shadow-x">
-        <ul class="text-4 flex-center-center wrap  bg-2 padding-top-1">
-            <li class="proyectos flex-center-center direction-column max-width-40p">
+    <section id="proyect" class="margin-top-2 radius-1 container shadow-x margin-bottom-1">
+        <ul class="text-4 flex-center-center wrap radius-1 bg-2 padding-top-1">
+            <li class="proyectos radius-1 flex-center-center direction-column max-width-40p">
                 <p class="text-1 padding-1 font-size-15">Portfolio</p>
                 <img class="imgproyect" src="imagenes/portafolio.PNG" alt="">
                 <p class="padding-1" >Primer pagina que hicimos intentando copiar el portfolio profesor, tuve algunos lemas con el padding para centrar los elementos y el grid</p>
             </li>
-            <li class="proyectos flex-center-start direction-column max-width-40p">
+            <li class="proyectos radius-1 flex-center-center direction-column max-width-40p">
                 <p class="text-1 padding-1 font-size-15">MercadoLiebre</p>
                 <img class="imgproyect" src="imagenes/mercadoliebre.PNG" alt="">
                 <p class="padding-1">Con esta pagina empece a entender bien el uso de grid y pude implementarlo de una ra mucho mas facil, tambien use template</p>
             </li>
-            <li class="proyectos flex-center-start direction-column max-width-40p">
+            <li class="proyectos radius-1 flex-center-center direction-column max-width-40p">
                 <p class="text-1 padding-1 font-size-15">Cults3D</p>
                 <img class="imgproyect" src="imagenes/cults.PNG" alt="">
                 <p class="padding-1">Es el comienzo del uso de flex y grid con responsive, ademas empezamos a ver aciones y el uso de iconos de Font Awesome</p>
             </li>
-            <li class="proyectos flex-center-start direction-column max-width-40p">
+            <li class="proyectos radius-1 flex-center-center direction-column max-width-40p">
                 <p class="text-1 padding-1 font-size-15">DotDagger</p>
                 <img class="imgproyect" src="imagenes/dotdager.PNG" alt="">
                 <p class="padding-1">Sin dudas la mejor por tener el tiempo para completarla, en ella se puede ver uso ibrerias y algunas animaciones</p>
             </li>
-            <li class="proyectos flex-center-start direction-column max-width-40p">
+            <li class="proyectos radius-1 flex-center-center direction-column max-width-40p">
                 <p class="text-1 padding-1 font-size-15">SkullDungeon</p>
                 <img class="imgproyect" src="imagenes/skulldungeon.PNG" alt="">
                 <p class="padding-1">Fue la primer pagina que creamos intentando simular un un proyecto real, limitado s peticiones de un cliente</p>
@@ -100,6 +98,44 @@
         </ul>
     </section>
  
-    <script>src="function.js"</script>
+
+    <article class=" padding-bottom-6 color-2 bold margin-inline-2 max-width-60 width-100 align-self flex-wrap flex-center-space">
+        <div class="max-width-50por margin-right-2" >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1806.4622447474944!2d-80.13933812090269!3d25.851066375045193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b300765f0fdd%3A0xbc3dd949e2024593!2sCasa%20del%20Bananero!5e1!3m2!1sen!2sar!4v1734929132484!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        
+        <form style="padding-left: 3rem;" class="flex-center-center direction-column width-50por ">
+            
+            <div class="width-100 formylabel padding-bottom-2">
+                <label for="name">Name</label>
+                <input class="formstyle" type="text" name="name" required>
+            </div>
+            
+            <div class="width-100 formylabel padding-bottom-2">
+                <label for="email">Email</label>
+                <input class="formstyle" type="email"  name="email" required>
+            </div>
+
+            <div class="width-100 formylabel padding-bottom-2"">
+                <label for="message">Enter Your Message Here</label>
+                <textarea class="formsg" name="message" rows="10" required></textarea>
+            </div>
+            
+            <div class= "width-100 flex-center-center">
+                <button class="back-color-2 width-100 flex-center-center formbutton" type="submit">Send</button>
+            </div>
+        </form>
+                   
+    </article>
+
+
+
+
+    <footer class="flex-center-center gap-1 padding-block-2 bg-3">
+        <p>Copyright © circupipe 2024. All Right Reserved.</p>
+        <a  href="mailto:leonardoromangarcia@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+    </footer>
+    <script src="function.js"></script>
 </body>
 </html>

@@ -1,7 +1,13 @@
-
 const menu = document.querySelector("#menu")
 const hamburger = document.querySelector("#hamburger")
 
-/* hamburger.addEventListener("click",()=>{menu.classList.add("flex");}) */
+const cerrar = document.querySelector("#cerrar")
 
-hamburger.addEventListener('click', () => {menu.style.display = 'flex'; });
+hamburger.addEventListener("click",()=>{
+    menu.classList.add("flex");
+    menu.classList.remove("none");}) 
+
+cerrar.addEventListener("click",()=>{
+    menu.classList.add("none");
+    menu.classList.remove("flex");
+})

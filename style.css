@@ -1,7 +1,7 @@
 #nav-button{
     position: relative;
     top: 1px;
-    /* filter: drop-shadow(0px 7px 21px var(--color-2)); */
+
     
 }
 
@@ -27,16 +27,25 @@
 }
 
 .proyectos{
-    width: 25rem;
-    min-width: 24rem;
-    height: 28rem;
+    min-width: 22rem;
+    height: 32rem;
     padding: 2rem;
     margin: 1rem;
     border: 1px solid var(--border);
+     transition: background-color 0.5s, transform 0.5s
+}
+
+.proyectos:hover, .proyectos:focus{
+    opacity: 1;
+    scale: 1.03;
+}
+
+.proyectos:focus{
+    opacity: 1;
 }
 
 .imgproyect{
-    width: 15rem;
+    width: 18rem;
 }
 
 

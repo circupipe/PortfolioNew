@@ -26,6 +26,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
     /* background */
 
     --bg-white: #fff;
+    --bg-black: #000;
     --bg-1: #1f1f1f;
     --bg-2: #181818;
     --border: #44d62c;
@@ -34,6 +35,9 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 /* --text-- */
 
 .indent{text-indent: 3rem;}
+.tes{text-;
+
+}
 
 .bold{font-weight: 700;}
 .text-size-1{font-size: 1rem;}
@@ -56,7 +60,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .text-4{color: var(--color-2);}
 
 .font-size-1 {font-size: 1rem;}
-.font-size-15 {font-size: 1.5rem;}
+.font-size-15 {font-size: 1.3rem;}
 .font-size-2 {font-size: 2rem;}
 .font-size-3 {font-size: 3rem;}
 
@@ -67,6 +71,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .bg-black{background-color: var(--bg-black);}
 .bg-1{background-color: var(--bg-1);}
 .bg-2{background-color: var(--bg-2);}
+.bg-3{background-color: var(--color-1);}
 
 /* --border-- */
 
@@ -75,11 +80,21 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .border-3{border-left: 10px solid var(--border);}
 .border-3b{border-right: 10px solid var(--border);}
 
+/* --estyles-- */
+
+.button {
+    border: none;
+    color: var(--color-1); /* Color del texto */
+    padding: .85rem; /* Espaciado interno del botón */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
+}
+
 /* --shadows-- */
 
 .inshadow { box-shadow: inset 0px 0px 5px 0px var(--border)}
 .navshadow { box-shadow: 0px 5px 5px 5px 5px var(--border)}
-
 
 .shadow-a {box-shadow: 15px 15px 20px var(--border)}
 .shadow-a:hover {box-shadow: 15px 15px 30px var(--border)}
@@ -101,7 +116,9 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 .padding-2{padding: 2rem;}
 .padding-3{padding: 3rem;}
 
+.padding-block-2{padding-block: 2rem;}
 .padding-block-3{padding-block: 3rem;}
+.padding-block-4{padding-block: 4rem;}
 
 .padding-top-1{padding-top: 1rem;}
 .padding-top-2{padding-top: 2rem;}
@@ -112,6 +129,7 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 
 .margin-top-1{margin-top: 1rem;}
 .margin-top-2{margin-top: 5rem !important;}
+.margin-bottom-1{margin-bottom: 3rem !important ;}
 
 /* --tamaños-- */
  
@@ -134,10 +152,14 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 /* --posicionamiento-- */
 
 .flex{
-    display: flex;
+    display: flex !important;
 }
 
 .none{
+    display: none !important;
+}
+
+.xnone{
     display: none;
 }
 
@@ -253,11 +275,45 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 @media (max-width:800px) {
 
     #hamburger{
-        display: flex;
+        display: flex !important;
     }
     
     #menu{
         display: none;
         flex-direction: column;
+        position: absolute;
+        right: 42px;
+        top: 31px;
+        background-color: black;
+        padding: 0rem 3rem 3rem 3rem;
+        box-shadow: 0px 0px 23px 12px var(--border);
+        z-index: 10;
+        border-radius: 6px;
     }
+
+    #nav-button{
+        border: none;
+        color: var(--color-1);
+    }
+
+    .xnone{display: flex;}
+
+    #cerrar{
+        display: flex;
+        align-self: start;
+        transform: translateX(-2rem) translateY(1rem);
+    }
+
+    .container{
+        width: 85%;
+    }
+}
+
+
+@media (max-width:600px) {
+
+    .container{
+        width: 90%;
+    }
+
 }
