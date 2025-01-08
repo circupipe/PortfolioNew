@@ -320,13 +320,13 @@ a:link, :visited, :hover, :active{ /* saca las decoraciones de links */
 
     #form{
         margin-top: 1rem;
-        width: fit-content;
+        width: 100% !important;
         height: auto;
     }
 
     #map{
-    width: 100%;
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
     }
 }
 
